@@ -29,12 +29,10 @@ module Players
           position_2 = board.cells[index_2]
           position_3 = board.cells[index_3]
           #binding.pry
-          if position_1 == position_2 && board.taken?(index_1) 
+          if position_1 == position_2 && position_1 == Game.current_player
             position = index_3
-          elsif position_1 == position_3 && board.taken?(index_1) 
-            position = index_2
-          elsif position_2 == position_3 && board.taken?(index_2) 
-            position = index_1  
+          elsif position_1 == position_3 &&  position_1 == Game.current_player
+          elsif position_2 == position_3 &&  position_2 == Game.current_player
           end
       end
       position
