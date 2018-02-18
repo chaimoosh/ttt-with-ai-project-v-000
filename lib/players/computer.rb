@@ -31,7 +31,6 @@ module Players
           #binding.pry
           if position_1 == position_2 && position_1 == Game.current_player
             position = position_3
-            position = index_3
           elsif position_1 == position_3 &&  position_1 == Game.current_player
             position = position_2
           elsif position_2 == position_3 &&  position_2 == Game.current_player
