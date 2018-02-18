@@ -29,11 +29,11 @@ module Players
           position_2 = board.cells[index_2]
           position_3 = board.cells[index_3]
           #binding.pry
-          if position_1 == position_2 && position_1 == game.current_player
+          if position_1 == position_2 && position_1 == game_1.current_player
             position = position_3
-          elsif position_1 == position_3 &&  position_1 == game.current_player
+          elsif position_1 == position_3 &&  position_1 == game_1.current_player
             position = position_2
-          elsif position_2 == position_3 &&  position_2 == game.current_player
+          elsif position_2 == position_3 &&  position_2 == game_1.current_player
             position = position_1
           end
       end
